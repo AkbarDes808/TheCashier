@@ -43,7 +43,17 @@ Tugas Modul 2
         
        // berfungsi untuk mendeklarisakan method item yang akan digunakan
         
-         {
+         public partial class MainWindow : Window
+    
+        private Calculator calculator;
+        public MainWindow()
+        {
+            InitializeComponent();
+            calculator = new Calculator();
+            listBox.ItemsSource = calculator.getListItem();
+        }
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
             string title = itemNameBox.Text;
             int quantity = int.Parse(quantityBox.Text);
             string type = typeBox.Text;
@@ -57,8 +67,9 @@ Tugas Modul 2
 
             listBox.Items.Refresh();
         }
+    }
         //untuk menampilkan data yang telah dimasukkan sebelumnya
-         class Calculator
+         
     
         private List<Item> listItem;
         private double total = 0;
@@ -79,7 +90,7 @@ Tugas Modul 2
         {
             return listItem;
         }
-    }
+    
  // untuk melakukan perhitungan pada data yang telah dimasukkan sebelumnya
         
         
