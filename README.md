@@ -41,7 +41,7 @@ Tugas Modul 2
             return subtotal;
         }  
         
-        berfungsi untuk mendeklarisakan method item yang akan digunakan
+       // berfungsi untuk mendeklarisakan method item yang akan digunakan
         
          {
             string title = itemNameBox.Text;
@@ -57,9 +57,9 @@ Tugas Modul 2
 
             listBox.Items.Refresh();
         }
-        untuk menampilkan data yang telah dimasukkan sebelumnya
+        //untuk menampilkan data yang telah dimasukkan sebelumnya
          class Calculator
-    {
+    
         private List<Item> listItem;
         private double total = 0;
         public Calculator()
@@ -80,6 +80,6 @@ Tugas Modul 2
             return listItem;
         }
     }
-  untuk melakukan perhitungan pada data yang telah dimasukkan sebelumnya
+ // untuk melakukan perhitungan pada data yang telah dimasukkan sebelumnya
         
         
